@@ -1,29 +1,11 @@
 import numpy as np
 import load_names
 import random
-"""
-This files includes all functionality for the class Person.
-The Person class stores the name, age, weight, and height of a person.
-create_persons_list provides a way to randomly create a list of dummy persons.
-This is mainly meant to make testing easier.
-
-Complete, the rest of the Person class and the function create_persons_list.
-"""
 
 # NAMES is a list or array with common first names.
-NAMES = load_names.load_names()  # Variables in the global namespace should be capitalized.
+NAMES = load_names.load_names()
 
 class Person():
-    """
-    Here, you will create the class Person.
-
-    The __init__ method is already given and it is not allowed to create new object attribute (self.some_name = ...).
-
-    Add all the needed (magic) methods described in the grading criteria.
-    This includes a method such that printed objects are readable for the end user.
-    Also, this class should also be made:
-    comparable, sortable, subscriptable, iterable, and castable (to float, int, and string)
-    """
     def __init__(self, name, age, height, weight):
         self._name = name
         self._age = age
